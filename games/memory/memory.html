@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>itsMeAsh/Games/Memory</title>
+
+	<link rel="stylesheet" href="memory.css">
+	<script src="memory.js" defer></script>
+</head>
+<body>
+	<main>
+		<div id="row1">
+			<div id="scoreBoard">
+				<div id="backButton"><img src="resource/back.svg" alt="Back"></div>
+				<div id="level"><h1><span id="currLevelSpan">Click me to start</span></h1></div>
+				<div id="score"><h1>Score: <span id="currScoreSpan">0</span></h1></div>
+			</div>
+			
+			<div id="container">
+				
+				<div class="pieceBox" id="block1">
+					<img src="resource/csharp.svg" alt="C#" id="1">
+				</div>
+				
+				<div class="pieceBox" id="block2">
+					<img src="resource/css.svg" alt="CSS" id="2">
+				</div>
+				
+				<div class="pieceBox" id="block3">
+					<img src="resource/firebase.svg" alt="Firebase" id="3">
+				</div>
+				
+				<div class="pieceBox" id="block4">
+					<img src="resource/github.svg" alt="GitHub" id="4">
+				</div>
+				
+				<div class="pieceBox" id="block5">
+					<img src="resource/html.svg" alt="HTML" id="5">
+				</div>
+				
+				<div class="pieceBox" id="block6">
+					<img src="resource/java.svg" alt="JAVA" id="6">
+				</div>
+				
+				<div class="pieceBox" id="block7">
+					<img src="resource/js.svg" alt="JS" id="7">
+				</div>
+				
+				<div class="pieceBox" id="block8">
+					<img src="resource/python.svg" alt="Python" id="8">
+				</div>
+			</div>
+			
+			<div id="gameOver">
+				<div id="gameOverImg1"><img src="resource/sadFace.svg" alt="Sad"></div>
+				<div><h1>Game Over</h1></div>
+				<div><p1>Don't worry you only loose a level.</p1></div>
+				<div id="tryAgainButton">
+					<div id="gameOverImg2"><img src="resource/retry.svg" alt="retry"></div>
+					<div><h2>Try Again?</h2></div>
+				</div>
+			</div>
+			
+			<div id="winPanel">
+				<div id="winImg"><img src="resource/celebrate.svg" alt="Congratulations"></div>
+				<div><h1>Congratulations, you've proved yourself</h1></div>
+				<div><p1>You have the sharpest memory</p1></div><br>
+				<div><p1>Your score: <span id="congratsScore"></span></p1></div>
+				<div id="playAgainButton">Play Again?</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: raleway;
+	src: url(../../resource/raleway.ttf);
+}
+main{
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #151818;
+	color: #30D2C5;
+	font-family: raleway;
+}
+#scoreBoard{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#backButton{
+	width: 10vh;
+	height: 10vh;
+}
+#backButton img{
+	width: 100%;
+	height: 100%;
+}
+#score{
+	margin-right: 2vh;
+}
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.pieceBox{
+	width: 20vw;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5vh 1.25vh;
+	border: 0.5vh solid transparent;
+	border-radius: 2vh;
+	padding: 1.25vh;
+	background-color: #CFF3F0;
+	transition: all 0.2s linear;
+}
+.pieceBox img{
+	height: 100%;
+}
+.pieceBox:hover{
+	border-color: #30D2C5;
+	transform: scale(1.05);
+}
+
+
+
+#gameOver{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+#gameOverImg1{
+	width: 50vh;
+	height: 50vh;
+}
+#gameOverImg1 img{
+	width: 100%;
+}
+
+#tryAgainButton{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 2vh;
+	border: 1px solid #30D2C5;
+	padding: 1vh 2vh;
+	margin: 3vh 0;
+	transition: all 0.2s linear;
+}
+
+#tryAgainButton:hover{
+	background-color: #30D2C5;
+	color: #151818;
+}
+#gameOverImg2{
+	width: 15vh;
+	height: 15vh;
+}
+#gameOverImg2 img{
+	width: 100%;
+	height: 100%;
+}
+
+#gameOver{
+	display: none;
+}
+
+
+
+#winPanel{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	font-size: 120%;
+}
+#winPanel img{
+	width: 40vh;
+}
+#playAgainButton{
+	margin-top: 5vh;
+	font-weight: bolder;
+	padding: 2vh;
+	border-radius: 2vh;
+border: #30D2C5 0.5vh solid;
+transition: all 0.2s linear;
+}
+#playAgainButton:hover{
+	background-color: #30D2C5;
+	color: #151818;
+}
+
+#winPanel{
+	display: none;
+}
+
+@media (max-width: 500px){
+	*{
+		font-size: 100%;
+	}
+	#backButton{
+		width: 5vh;
+		height: 5vh;
+	}
+	.pieceBox{
+		width: 10vh;
+		height: 10vh;
+		margin: 0.6vh 0.6vh;
+	}
+	#container{
+		margin-top: 30vh;
+	}
+	#tryAgainButton{
+		height: 10vh;
+	}
+	#gameOver{
+		margin-top: 15vh;
+	}
+	
+	#winPanel{
+		margin-top: 15vh;
+	}
+}
