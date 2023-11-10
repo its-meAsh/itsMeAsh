@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: raleway;
+	src: url(../../resource/raleway.ttf);
+}
+
+main {
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	background-color: #151818;
+	color: white;
+	font-family: raleway;
+}
+
+#row1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#row1>div {
+	width: 100%;
+}
+
+#row1 img {
+	width: 10%;
+}
+
+#gameOver {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+#gameOverImg1 {
+	width: 50vh;
+	height: 50vh;
+}
+
+#gameOverImg1 img {
+	width: 100%;
+}
+
+#tryAgainButton {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 2vh;
+	border: 1px solid #30D2C5;
+	padding: 1vh 2vh;
+	margin: 3vh 0;
+	transition: all 0.2s linear;
+}
+
+#tryAgainButton:hover {
+	background-color: #30D2C5;
+	color: #151818;
+}
+
+#gameOverImg2 {
+	width: 15vh;
+	height: 15vh;
+}
+
+#gameOverImg2 img {
+	width: 100%;
+	height: 100%;
+}
+
+#gameOver {
+	display: none;
+}
+
+
+
+#winPanel {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	font-size: 120%;
+}
+
+#winPanel img {
+	width: 40vh;
+}
+
+#playAgainButton {
+	margin-top: 5vh;
+	font-weight: bolder;
+	padding: 2vh;
+	border-radius: 2vh;
+	border: #30D2C5 0.5vh solid;
+	transition: all 0.2s linear;
+}
+
+#playAgainButton:hover {
+	background-color: #30D2C5;
+	color: #151818;
+}
+
+#winPanel {
+	display: none;
+}
+
+#row2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 40vh;
+	margin-top: 20vh;
+}
+#row2 input{
+	background-color: inherit;
+	border: none;
+	border-bottom: #30D2C5 0.2vh solid;
+	font-family: raleway;
+	font-weight: bolder;
+	font-size: 150%;
+	color: #30D2C5;
+	text-align: center;
+}
+#submitButton{
+	background-color: #30D2C5;
+	border: 0.2vh solid #30D2C5;
+	color: #151818;
+	transition: all 0.2s linear;
+	border-radius: 2vh;
+	font-weight: bolder;
+	padding: 2vh;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#submitButton:hover{
+	background-color: #151818;
+	color: #30D2C5;
+	transform: scale(1.1);
+}
+#numberDisplay{
+	color: #CFF3F0;
+}
+@media (max-width: 500px){
+	*{
+		font-size: 100%;
+	}
+	#backButton{
+		width: 5vh;
+		height: 5vh;
+	}
+	#tryAgainButton{
+		height: 10vh;
+	}
+	#gameOver{
+		margin-top: 15vh;
+	}
+	
+	#winPanel{
+		margin-top: 15vh;
+	}
+}
