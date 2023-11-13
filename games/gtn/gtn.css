@@ -82,6 +82,7 @@ color: #151818;
 	display: flex;
 	flex-direction: column;
 	transition: all 0.2s linear;
+	overflow: scroll;
 }
 #messages>div{
 	margin: 1vh 2vh;
