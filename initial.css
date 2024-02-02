@@ -4,7 +4,7 @@
 }
 @font-face{
   font-family: myFont;
-  src: url(/resources/myFont.ttf);
+  src: url(/itsMeAsh/resources/myFont.ttf);
 }
 :root{
   --primaryColor: #30D2C5;
