@@ -1,0 +1,9 @@
+@media (orientation: portrait){
+  body{
+    font-size: 50%;
+  }
+  #container>div{
+    height: 14vh;
+    margin: 2.5vh;
+  }
+}

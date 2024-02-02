@@ -1,0 +1,467 @@
+main {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.responsive {
+  display: none;
+}
+
+.ashRef {
+  color: var(--primaryColor);
+  transition: all 0.2s linear;
+}
+
+.ashRef:hover {
+  color: var(--tertiaryColor)
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.enlarge {
+  font-size: 150%;
+}
+
+.increase {
+  font-size: 125%;
+}
+
+.rowHeader {
+  padding-left: 4vh;
+}
+
+@keyframes tricolor {
+  0% {
+    color: white;
+  }
+
+  25% {
+    color: orange;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: #48A147;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.indiaRef:hover {
+  animation: tricolor 3s infinite;
+}
+
+main>div {
+  width: 100%;
+  margin-bottom: 20vh;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10vh;
+  padding: 2vh;
+}
+
+#h1s1 {
+  text-align: center;
+  width: 35%;
+  font-size: 400%;
+}
+
+#h1s2 {
+  width: 50%;
+  font-size: 140%;
+}
+
+#h1s2>ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+#h1s2>ul>li {
+  transition: all 0.2s linear;
+}
+
+#h1s2>ul>li:hover {
+  transform: rotate(20deg);
+}
+
+#row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#r1s1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 80vh;
+  padding-left: 30vh;
+  padding-bottom: 20vh;
+}
+
+#r1s1s1 {
+  font-size: 175%;
+  padding-bottom: 1vh;
+}
+
+#r1s1s2,
+#r1s1s3 {
+  font-size: 400%;
+}
+
+#r1s2 {
+  height: 76vh;
+  transition: all 0.2s linear;
+}
+
+#r1s2>div {
+  height: 100%;
+}
+
+#r1s2>div>img {
+  height: 100%;
+}
+
+#row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#r2s1 {
+  width: 140%;
+  font-size: 250%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4vh;
+}
+
+.quoteEnding {
+  font-size: 75%;
+}
+
+#r2s2 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 160%;
+  padding: 2vh;
+}
+
+#r2s2 ul {
+  list-style: none;
+}
+
+#r2s2>div {
+  margin-bottom: 2vh;
+}
+
+#r2s2s1>div {
+  margin-bottom: 2vh;
+}
+
+#r2s2 li {
+  transition: all 0.2s linear;
+}
+
+#r2s2 li:hover {
+  transform: translate(50%);
+  opacity: 0;
+}
+
+#row3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 130%;
+}
+
+#r3s1 {
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.workBox {
+  border-radius: 2vh;
+  padding: 4vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20vh;
+  width: 45vh;
+  border-top-right-radius: 0vh;
+  border-bottom-left-radius: 0vh;
+  transform-origin: bottom right;
+  transition: all 0.2s linear;
+}
+
+@keyframes glitchRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(-20deg);
+  }
+
+  66% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fallBreakReturn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-110deg)
+  }
+
+  20% {
+    transform: rotate(-80deg)
+  }
+
+  30% {
+    transform: rotate(-100deg);
+  }
+
+  40% {
+    transform: translateY(0%) rotate(-100deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(200%) rotate(-100deg);
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(0%) translateX(-100%) rotate(0deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(0%);
+  }
+
+}
+
+.workBox:hover {
+  border-radius: 2vh;
+  border-top-left-radius: 0vh;
+  border-bottom-right-radius: 0;
+}
+
+#row4 {
+  font-size: 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+#r4s1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectBox {
+  background-color: #000000;
+  border: 0.1vh solid var(--primaryColor);
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 35vh;
+  margin: 4vh;
+  transition: all 0.2s linear;
+}
+
+.projectBox:hover {
+  transform: scale(1.1)
+}
+
+.projectImg {
+  height: 50%;
+}
+
+.projectImg img {
+  height: 100%;
+}
+
+.projectName {
+  font-size: 120%;
+}
+
+.projectTags {
+  border-top: 0.1vh solid var(--primaryColor);
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.projectTags:hover {
+  transform: scale(1.1);
+}
+
+.projectTag {
+  border-radius: 1vh;
+  padding: 0.5vh;
+  margin: 0.5vh;
+}
+
+#row5 {
+  display: flex;
+  font-size: 130%;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: flex-start;
+}
+
+#r5s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2vh;
+}
+
+.docBox {
+  width: 95%;
+  padding: 2vh;
+  text-align: left;
+  border: 0.1vh solid var(--primaryColor);
+  border-radius: 1vh;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s linear;
+  margin: 2.5vh 0;
+}
+
+@keyframes goAndCome {
+  0% {
+    transform: translate(0%)
+  }
+
+  10% {
+    transform: translate(100%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(-150%);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(0%)
+  }
+}
+
+.docBox:hover {
+  animation: goAndCome 3s 1;
+}
+
+#row5 {
+  margin-bottom: 0vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  margin-top: 20vh;
+  background-image: linear-gradient(black,var(--secondaryColor));
+  padding-top: 4vh;
+}
+
+#footers1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vh;
+  height: 10vh;
+  margin-top: 2vh;
+}
+
+.contactBox {
+  transition: all 0.2s linear;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 0.1vh solid transparent;
+  height: 100%;
+}
+
+.contactBox:hover {
+  border: 0.1vh solid var(--primaryColor)
+}
+
+@media (orientation: landscape) {
+  #row1>div {
+    transition: all 0.2s linear;
+  }
+
+  #row1:hover #r1s1 {
+    transform: translate(75%)
+  }
+
+  #row1:hover #r1s2 {
+    transform: translate(-125%)
+  }
+}

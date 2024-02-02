@@ -1,0 +1,1 @@
+document.querySelector("#end").addEventListener('click',()=>{location.replace("https://its-meash.github.io/itsMeAsh/")})

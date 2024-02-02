@@ -1,0 +1,8 @@
+@media (orientation: portrait){
+  #row1 h1{
+    padding: 2vh;
+  }
+  body{
+    font-size: 60%;
+  }
+}

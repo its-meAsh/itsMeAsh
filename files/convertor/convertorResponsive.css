@@ -1,0 +1,12 @@
+@media (orientation: portrait){
+  #row2{
+    flex-direction: column;
+    align-items: center;
+  }
+  #row2>div{
+    width: 100%;
+  }
+  #row1 h1{
+    padding: 2vh;
+  }
+}

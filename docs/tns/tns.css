@@ -1,0 +1,350 @@
+header{
+  width: 100%;
+}
+#h1s1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130%;
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  padding: 2vh 0;
+}
+#effect{
+  padding: 2vh 0;
+  background: var(--secondaryColor);
+  border-top-right-radius: 1vh;
+  border-top-left-radius: 1vh;
+  position: relative;
+  top: -0.5vh;
+  z-index: 100;
+}
+main{
+  max-width: 100%;
+}
+#row1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  margin: 10vh 0;
+}
+#r1s1{
+  height: 50%;
+  font-size: 130%;
+  width: 40%;
+  padding: 4vh;
+  padding-left: 5vh;
+  color: var(--secondaryColor);
+  background-image: linear-gradient(90deg,var(--primaryColor) 70%,var(--secondaryColor));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s linear;
+  border-top-left-radius: 1vh;
+}
+#r1s2{
+  font-size: 500%;
+  width: 50%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+#transr1{
+  transition: all  2s linear;
+}
+@keyframes colorChange{
+  0%{
+    color: blueviolet;
+  }
+  12.5%{
+    color: indigo;
+  }
+  25%{
+    color: deepskyblue;
+  }
+  37.5%{
+    color: limegreen;
+  }
+  50%{
+    color: yellow;
+  }
+  62.5%{
+    color: orange;
+  }
+  75%{
+    color: red;
+  }
+  87.5%{
+    color: white;
+  }
+  100%{
+    color: blueviolet;
+  }
+}
+#animr1{
+  animation: colorChange 8s infinite;
+}
+#row1:hover #r1s1{
+  transform: translate(123.5%);
+  background-image: linear-gradient(270deg,var(--primaryColor) 70%,var(--secondaryColor));
+  justify-content: flex-end;
+  border-radius: 0vh;
+  border-top-right-radius: 1vh;
+}
+#row1:hover #r1s2{
+  transform: translate(-100%)
+}
+
+
+#row2,#row3,#row4{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 2.5vh;
+  height: 40vh;
+}
+#r2s1,#r3s1,#r4s1{
+  font-size: 180%;
+  text-align: left;
+  width: 100%;
+  margin: 1vh 0;
+}
+#r2s2,#r3s2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 120%;
+}
+#r2s2>div,#r3s2>div{
+  width: 100%;
+}
+#r2s2s2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+#r2s2s2>div{
+  width: 50%;
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondaryColor);
+  padding: 1vh;
+  border-radius: 1vh;
+  transform-origin: bottom right;
+  transition: all 0.5s linear;
+}
+
+#r2s2s2s1:hover{
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+#r2s2s2s2:hover{
+  transform: rotate(360deg);
+}
+#r2s2s2s3:hover{
+  opacity: 0;
+}
+
+#r3s2s2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes sequence{
+  0%{
+    color: white;
+    background-color: black;
+    border-radius: 1vh;
+  }
+  10%{
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border-radius: 2vh;
+  }
+  20%{
+    color: #DEFF4C;
+    background-color: var(--secondaryColor);
+    border-radius: 1vh;
+  }
+  30%{
+    color: var(--primaryColor);
+    background-color: black;
+    border-radius: 3vh;
+  }
+  40%{
+    color: var(--tertiaryColor);
+    background-color: var(--secondaryColor);
+  }
+  50%{
+    color: #985FFC;
+    background: var(--emergencyColor);
+    border-radius: 1vh
+  }
+  60%{
+    color: orange;
+    background-color: orange;
+    border-radius: 2vh;
+  }
+  70%{
+    color: blue;
+    background-color: var(--tertiaryColor);
+    border-radius: 1vh;
+  }
+  80%{
+    color: #26A338;
+    background-color: #26A338;
+    border-radius: 2vh;
+  }
+  90%{
+    color: var(--tertiaryColor);
+    background-color: deepskyblue;
+    border-radius: 1vh;
+  }
+  100%{
+    color: white;
+    background-color: black;
+    border-radius: 1vh;
+  }
+}
+#r3s2s2s1{
+  animation: sequence 10s infinite;
+  padding: 3vh;
+}
+.monospace{
+  font-family: monospace;
+  font-size: 90%;
+  background-color: black;
+}
+#row3{
+  height: 60vh;
+}
+#r3s3{
+  width: 100%;
+  margin: 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#stick{
+  background-color: white;
+  padding: 2.5vh;
+  border-radius: 4vh;
+  width: 1%;
+  transition: all 0.2s linear;
+  animation: flipWalk 10s alternate-reverse infinite;
+}
+#stick:hover{
+  background-color: var(--secondaryColor);
+  border: 0.2vh solid var(--primaryColor);
+}
+@keyframes flipWalk{
+  0%{
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+    width: 1%;
+  }
+  14%{
+    transform-origin: left bottom;
+    transform: rotate(180deg);
+    width: 20%;
+  }
+  28%{
+    transform-origin: right bottom;
+    transform: rotate(360deg);
+  }
+  42%{
+    transform-origin: left bottom;
+    transform: rotate(540deg);
+  }
+  56%{
+    transform-origin: right bottom;
+    transform: rotate(720deg);
+  }
+  70%{
+    transform-origin: left bottom;
+    transform: rotate(900deg);
+  }
+  84%{
+    transform-origin: right bottom;
+    transform: rotate(1080deg);
+  }
+  100%{
+    transform-origin: left bottom;
+    transform: rotate(1260deg);
+  }
+}
+
+@keyframes tricolor {
+  0% {
+    color: white;
+  }
+
+  25% {
+    color: orange;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: #48A147;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.indiaRef:hover {
+  animation: tricolor 3s infinite;
+}
+
+.ashRef {
+  color: var(--primaryColor);
+  transition: all 0.2s linear;
+}
+
+.ashRef:hover {
+  color: var(--tertiaryColor)
+}
+
+#r4s2 ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 120%;
+}
+#r4s2 li{
+  width: 20%;
+  margin: 2vh;
+}
+
+#end{
+  width: 20%;
+  padding: 2vh;
+  border-radius: 1vh;
+  border: 0.2vh solid var(--tertiaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh auto;
+  margin-top: 30vh;
+  color: var(--tertiaryColor);
+  transition: all 0.2s linear;
+}
+#end:hover{
+  background-color: var(--tertiaryColor);
+  color: var(--secondaryColor);
+}

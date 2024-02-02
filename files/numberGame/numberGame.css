@@ -1,0 +1,119 @@
+main{
+  width: 100%;
+}
+#row1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center
+}
+#row1 h1{
+  padding-right: 40vh;
+}
+#backButton{
+  height: 10vh;
+}
+#backButton img{
+  height: 100%;
+}
+#row2{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#row2>div{
+  margin: 2vh;
+  font-size: 130%;
+}
+#inputElement{
+  background-color: transparent;
+  border: 0.1vh solid var(--primaryColor);
+  padding: 2vh;
+  border-radius: 1vh;
+  font-family: myFont;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
+#submitButton{
+  background-color: transparent;
+  border: 0.1vh solid var(--primaryColor);
+  padding: 2vh;
+  border-radius: 1vh;
+  text-align: center;
+  color: var(--primaryColor);
+  font-size: 120%;
+  transition: all 0.2s linear;
+}
+#submitButton:hover{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+#gameOver{
+  display: flex;
+  flex-direction: column;
+  display: none;
+  align-items: center;
+  width: 90%;
+  margin: 4vh;
+  margin-top: 10vh;
+}
+#tryAgainButton{
+  display: flex;
+  padding: 2vh;
+  justify-content: space-between;
+ align-items: center;
+ border-radius: 1vh;
+ border: 0.1vh solid var(--primaryColor);
+ margin: 4vh;
+ transition: all 0.2s linear;
+}
+#tryAgainButton:hover{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+#gameOverImg1{
+  height: 40vh;
+}
+#gameOverImg1 img{
+  height: 100%;
+}
+#gameOverImg2{
+  height: 10vh;
+  border-right: 0.1vh solid var(--primaryColor);
+  margin-right: 2vh;
+  border-radius: 2vh;
+  transition: all 0.2s linear;
+}
+#gameOverImg2 img{
+  height: 100%;
+}
+#gameOverImg2:hover{
+  border-color: var(--secondaryColor);
+}
+#winPanel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+display: none;
+}
+#winImg{
+  height: 60vh;
+}
+#winImg img{
+  height: 100%;
+}
+#playAgainButton{
+  font-size: 140%;
+  padding: 4vh;
+  text-align: center;
+  border: 0.1vh solid var(--primaryColor);
+  border-radius: 1vh;
+  margin:3vh;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>itsMeAsh/Docs/TNS</title>
+
+  <link rel="stylesheet" href="../../initial.css">
+  <link rel="stylesheet" href="tns.css">
+  <link rel="stylesheet" href="tnsResponsive.css">
+
+  <script src="tns.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="h1s1">Transitions and Animations</div>
+    <div id="effect"></div>
+  </header>
+  <main>
+    <div id="row1">
+      <div id="r1s1">
+        <ul>
+          <li>Transition</li>
+          <li>Animation</li>
+          <li>Transition and Animation in the homepage</li>
+        </ul>
+      </div>
+      <div id="r1s2">
+        <span id="transr1">Transition</span> and <span id="animr1">Animation</span>
+      </div>
+    </div>
+
+    <div id="row2">
+      <div id="r2s1">Transition</div>
+      <div id="r2s2">
+        <div id="r2s2s1">Transitions in CSS are set using the <span class="monospace">transition</span> property. Transitions are single keyframed and thus only a specific special effect can be obtained. Transitions help to add frames to one or many property/properties of an element which change(s) on a certain occasion such as color, font-size, transform etc. </div>
+        <div id="r2s2s2">
+          <div id="r2s2s2s1">Hover Me</div>
+          <div id="r2s2s2s2">Hover me</div>
+          <div id="r2s2s2s3">Hover me</div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="row3">
+      <div id="r3s1">Animation</div>
+      <div id="r3s2">
+        <div id="r3s2s1">Animations in CSS are set using the <span class="monospace">animation</span> property. Animation are multi-keyframed and thus many special effect can be obtained. Animation help to add frames to one or many property/properties of an element which change(s) either for a specific duration or forever. The good thing about animations is that one can create a sequence of all the happenings in animations unlike transition where all the effects happen at once. </div>
+        <div id="r3s2s2">
+          <div id="r3s2s2s1">I'm animating forever</div>
+        </div>
+      </div>
+      <div id="r3s3">
+        <div id="stick"></div>
+      </div>
+    </div>
+    
+    <div id="row4">
+      <div id="r4s1">Transition and Animation in the homepage</div>
+      <div id="r4s2">
+        <ul>
+          <li>Starting from the navigation bar, each option at the <strong>navigation</strong> bar has a transition to rotate 20 degrees when hovered.</li>
+          <li>Followed by that is the first row on which hovering results in the <strong>interchange</strong> of their positions.</li>
+          <li>The third effect is in the <strong>Skills</strong> section where hovering each skill moves it to right and simultaneously decreases its opacity from 1 to 0</li>
+          <li>The fourth effect is my favorite one and I call it as the <strong>Frame fall animation</strong>. It is controlled by <strong>JavaScript</strong>. On the first and second hover, the hovered frame swings 20 degrees making it look like it is hanging on just one nail. Doing this twice results in the same animation but when it is hovered the third time, it swings completely and fall off. Ofcourse the frames again get back to their respective places.</li>
+          <li>Following this is the 5th transition to scale up each <strong>project</strong> tile as each of them is hovered.</li>
+          <li>In the <strong>Doc</strong> section, a basic transition is to move each Doc box to the right, decrease its opacity, then make it come from the left with an increasing opacity.</li>
+          <li>At the bottom lie the contact options with a border color changing transition on each when hovered. </li>
+          <li>A pattern to notice is that every word which spells <span class="ashRef">Ash</span> is colored <span style="color: #30D2C5">#30D2C5</span> and hovering it results in changing of its color to white.</li>
+          <li>The last animation is in every word refering to <span class="indiaRef">India</span> has a color changing animation to the three colors of the <span class="indiaRef">Indian</span> flag</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="end">Back home?</div>
+  </main>
+</body>
+
+</html>

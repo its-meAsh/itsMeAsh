@@ -1,0 +1,94 @@
+main{
+  width: 100%;
+}
+#row1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center
+}
+#row1 h1{
+  padding-right: 40vh;
+}
+#backButton{
+  height: 10vh;
+}
+#backButton img{
+  height: 100%;
+}
+
+#botMessage{
+  position: absolute;
+  right: 0;
+  border: 0.1vh solid var(--primaryColor);
+  border-radius: 1vh;
+  padding: 2vh;
+  font-size: 130%;
+}
+#botMessageRow1{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 40vh;
+  justify-content: space-between;
+}
+#botMessageRow1 img{
+  height: 100%;
+}
+#restartTemplate{
+  display: none;
+  margin: auto;
+  border: 0.1vh solid var(--primaryColor);
+  text-align: center;
+  border-radius: 1vh;
+  width: fit-content;
+  padding: 1vh;
+  transition: all 0.2s linear;
+}
+
+#row2{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+  text-align: center;
+  margin: auto;
+  width: 60vh;
+  height: 30vh;
+  justify-content: space-between;
+}
+#unb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#you{
+  border-right: 0.1vh solid var(--primaryColor);
+  width: 100%;
+}
+#bot{
+  border-left: 0.1vh solid var(--primaryColor);
+  width: 100%;
+}
+
+#row3{
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+  align-items: center;
+  margin: auto;
+  padding-top: 20vh;
+  font-size: 150%;
+}
+#row3>div{
+  border: 0.1vh solid var(--primaryColor);
+  border-radius: 1vh;
+  transition: all 0.2s linear;
+  padding: 2vh;
+  text-align: center;
+  width: 20vh;
+}
+#row3>div:hover,#restartTemplate:hover{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}

@@ -1,0 +1,21 @@
+@media (orientation: portrait){
+  body{
+    font-size: 50%;
+  }
+  #row1 h1{
+    padding: 2vh;
+  }
+  #row3{
+    flex-direction: column;
+    width: 100%;
+  }
+  #row3>div{
+    margin-bottom: 5vh;
+  }
+  #row2{
+    height: 20vh;
+  }
+  #botMessage{
+    display: none;
+  }
+}

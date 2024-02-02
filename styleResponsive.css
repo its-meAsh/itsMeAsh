@@ -1,0 +1,64 @@
+@media (orientation: portrait){
+  #h1s2{
+    display: none;
+  }
+  #h2s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    transition: all 0.2s linear;
+  }
+  #h2s3 img{
+    height: 100%;
+  }
+  #row1{
+    flex-direction: column;
+  }
+  #r1s1{
+    padding-left: 0;
+    text-align: left;
+    width: 70%;
+  }
+  #row2{
+    flex-direction: column;
+  }
+  #row2>div{
+    width: 70%;
+  }
+  #r3s1{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #r3s1>div{
+    margin-bottom: 5vh
+  }
+  #footers1{
+    flex-direction: column;
+    margin-top: 10vh
+  }
+  .contactBox{
+    width: 80%;
+    margin-bottom: 3vh;
+  }
+  #r1s2{
+    height: 50vh
+  }
+  header{
+    flex-direction: column;
+  }
+  #header{
+    width: 90%;
+  }
+  #navBarResponsive ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  .docBox{  
+    font-size: 80%;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>itsMeAsh/Games/NumberGame</title>
+
+	<link rel="stylesheet" href="numberGame.css">
+	<link rel="stylesheet" href="../../initial.css">
+	<link rel="stylesheet" href="numberGameResponsive.css">
+	
+	<script src="numberGame.js" defer></script>
+</head>
+
+<body>
+	<main>
+		<div id="row1">
+			<div id="backButton"><img src="../../images/IMG-1.3.svg" alt="Back"></div>
+			<div>
+				<h1>Memory Number - Level <span id="levelSpan">1</span></h1>
+			</div>
+		</div>
+
+		<div id="row2">
+			<div>
+				<h1><span id="numberDisplay">Click me to start</span></h1>
+			</div>
+			<div><input type="number" id="inputElement" placeholder="Enter your guess"></div>
+			<div id="submitButton">Submit</div>
+		</div>
+
+		<div id="gameOver">
+			<div id="gameOverImg1"><img src="../../images/IMG-2.1.11.svg" alt="Sad"></div>
+			<div>
+				<h1>Game Over</h1>
+			</div>
+			<div>
+				<p1>Don't worry you only loose a level.</p1>
+			</div>
+			<div id="tryAgainButton">
+				<div id="gameOverImg2"><img src="../../images/IMG-2.1.10.svg" alt="retry"></div>
+				<div>
+					<h2>Try Again?</h2>
+				</div>
+			</div>
+		</div>
+
+		<div id="winPanel">
+			<div id="winImg"><img src="../../images/IMG-2.1.1.svg" alt="Congratulations"></div>
+			<div>
+				<h1>Congratulations, you've proved yourself</h1>
+			</div>
+			<div>
+				<p1>You have the sharpest memory</p1>
+			</div><br>
+			<div>
+				<p1>You reached level 10</p1>
+			</div>
+			<div id="playAgainButton">Play further?</div>
+		</div>
+	</main>
+</body>
+
+</html>

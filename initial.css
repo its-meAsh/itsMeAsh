@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: myFont;
+  src: url(/resources/myFont.ttf);
+}
+:root{
+  --primaryColor: #30D2C5;
+  --secondaryColor: #151818;
+  --tertiaryColor: #FFFFFF;
+  --emergencyColor: #CFF3F0;
+}
+body{
+  background-color: var(--secondaryColor);
+  font-family: myFont;
+  width: 100vw;
+  font-size: 1.9vh;
+  color: var(--tertiaryColor)
+}
+html{
+  scroll-behavior: smooth;
+}
