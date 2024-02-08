@@ -1,0 +1,35 @@
+@media (orientation: portrait){
+  .box{
+    width: 90%;
+  }
+  .boxp{
+    flex-direction: column;
+    width: 100%;
+  }
+  table{
+    margin-top: 5vh;
+  }
+  .boxd{
+    width: 90%;
+  }
+  .boxt{
+    width: 90%;
+  }
+  .block{
+    width: 90%;
+  }
+  .breaker{
+    width: 90%;
+  }
+  .boxc{
+    width: 90%;
+    overflow: scroll;
+  }
+  #l1,#l2,#l3,#l4{
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+  .questionBox{
+    flex-direction: column;
+  }
+}

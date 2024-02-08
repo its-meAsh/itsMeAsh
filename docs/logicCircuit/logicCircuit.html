@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script src="logicCircuit.js" defer></script>
+  <link rel="stylesheet" href="../../initial.css">
+  <link rel="stylesheet" href="logocCircuitResponsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="logicCircuit.css">
+
+  <!-- and it's easy to individually load additional languages -->
+
+  <script defer>
+    hljs.highlightAll();
+  </script>
+</head>
+
+<body>
+  <main>
+    
+    <div id="label">
+      <div id="img"><img src="../../images/IMG-3.1.png" alt=""></div>
+      <div id="name">Logic Circuits</div>
+    </div>
+    
+    <div id="row1" class="block">
+      <div class="bh">What is a logic gate?</div>
+      <div class="bp">A logic gate is a device that performs a Boolean function, a logical operation performed on one or more binary inputs that produces a single binary output. </div>
+    </div>
+
+    <div id="block2" class="block">
+      <div class="bh">What is a truth table?</div>
+      <div class="bp">A truth table is a mathematical table used in logic - in connection with Boolean algebra, Boolean functions and propositional calculus. It sets out the functional values of logical expressions on each of their functional arguments, i.e. for each combination of values taken by their logical variables.</div>
+    </div>
+    <div class="breaker">Types of logic gates</div>
+    <div id="row2" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">OR Gate</div>
+          <div>An OR gate returns <span class="monospace">true</span> if either or all the inputs are <span class="monospace">true</span> else returns <span class="monospace">false</span>. This gate is also known as inclusive OR.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  or(input1, input2) {
+    if (input1 || input2) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+}
+</code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="or"></div>
+      </div>
+
+    </div>
+
+    <div id="row3" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">AND Gate</div>
+          <div>An AND gate returns <span class="monospace">true</span> only if all the inputs are <span class="monospace">true</span> else returns <span class="monospace">false</span>.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  and(input1, input2) {
+    if (input1 && input2) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="and"></div>
+      </div>
+
+    </div>
+
+    <div id="row3" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">XOR Gate</div>
+          <div>An XOR gate returns <span class="monospace">true</span> only if any one of the inputs is <span class="monospace">true</span> else returns <span class="monospace">false</span>. This gate is known as exclusive OR.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  xor(input1, input2) {
+    if ((input1 && !input2) || (!input1 && input2)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="xor"></div>
+      </div>
+
+    </div>
+
+    <div id="row4" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">NOT Gate</div>
+          <div>A NOT gate takes only 1 input and returns <span class="monospace">true</span> when the input is <span class="monospace">false</span> and returns <span class="monospace">false</span> when the input is <span class="monospace">true</span> i.e. opposite of the input.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  not(input1) {
+    return !input1;
+  }
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="not"></div>
+      </div>
+
+    </div>
+
+    <div id="row5" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">Buffer Gate</div>
+          <div>A Buffer gate takes only 1 input and returns the same input as the output. It is used in Digital Electronics to create delays.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  buffer(input1) {
+    return input1;
+  }
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="buffer"></div>
+      </div>
+
+    </div>
+
+    <div id="row6" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">NAND Gate</div>
+          <div>A NAND gate is an AND gate followed by a NOT gate. It returns <span class="monospace">true</span> when either of the inputs are <span class="monospace">false</span> else returns <span class="monospace">false</span>.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  nand(input1, input2) {
+    if (input1 && input2) {
+      return !true;
+    }
+    else {
+      return !false;
+    }
+  }
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="nand"></div>
+      </div>
+
+    </div>
+
+    <div id="row7" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">NOR Gate</div>
+          <div>A NOR gate is an OR gate followed by a NOT gate. It returns <span class="monospace">true</span> when all the inputs are <span class="monospace">false</span> else returns <span class="monospace">false</span>.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  nor(input1, input2) {
+    if (input1 || input2) {
+      return !true;
+    }
+    else {
+      return !false;
+    }
+  }
+}
+</code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="nor"></div>
+      </div>
+
+    </div>
+
+    <div id="row8" class="box">
+      <div class="boxp">
+        <div class="boxd">
+          <div class="boxh">XNOR Gate</div>
+          <div>An XNOR gate is an XOR gate followed by a NOT gate. It returns <span class="monospace">true</span> if all the inputs are <span class="monospace">true</span> or <span class="monospace">false</span> else returns <span class="monospace">false</span>.</div>
+          <div class="boxc">
+            <pre><code>class LogicGate {
+  xnor(input1, input2) {
+    if ((input1 && !input2) || (!input1 && input2)) {
+      return !true;
+    }
+    else {
+      return !false;
+    }
+  }
+}
+</code></pre>
+          </div>
+        </div>
+        <div class="boxt" id="xnor"></div>
+      </div>
+
+    </div>
+    <div class="breaker" style="font-size: 200%; width: 90%;">Solve this</div>
+    <div class="questionBox">
+      <div id="l4">
+        <div id="l4Name"></div>
+        <div id="l3">
+          <div id="l3Name"></div>
+          <div id="l1">
+            <div id="l1Name"></div>
+            <div>
+              <div id="i1"><input type="text" id="i1In" class="inputBool"></div>
+              <div id="i2"><input type="text" id="i2In" class="inputBool"></div>
+            </div>
+          </div>
+          <div id="l2">
+            <div id="l2Name"></div>
+            <div>
+              <div id="i3"><input type="text" id="i3In" class="inputBool"></div>
+              <div id="i4"><input type="text" id="i4In" class="inputBool"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="answer">
+        <div>Want to go back home?</div>
+        <div id="answerValue">make me true</div>
+      </div>
+    </div>
+    <div id="mb"></div>
+  </main>
+</body>
+
+</html>

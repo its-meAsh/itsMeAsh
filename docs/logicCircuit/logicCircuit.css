@@ -1,0 +1,165 @@
+code{
+  background-color: #151818!important;
+}
+
+@font-face{
+  font-family: victor;
+  src: url(../../resources/victor.ttf);
+}
+
+body{
+  background-color: #DFE1F5;
+  color: #151818;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main>div{
+  margin-top: 10vh;
+}
+.block,.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+.bh{
+  font-size: 150%;
+}
+.bp{
+  margin-top: 0.5vh;
+  font-size: 130%;
+}
+.breaker{
+  font-size: 150%;
+  width: 75%;
+}
+.boxh{
+  font-size: 140%;
+  margin: 1vh 0;
+}
+.boxp{
+  font-size: 110%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxd{
+  width: 70%;
+}
+.boxt{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 110%;
+}
+table,td,th{
+  border: 0.25vh solid #151818;
+  padding: 1vh;
+  font-family: victor;
+  text-align: center;
+  border-collapse: collapse;
+}
+.victor{
+  font-family: victor;
+  font-size: 95%;
+}
+th{
+  background-color: white;
+}
+.monospace{
+  font-family: victor;
+  font-size: 80%;
+}
+
+.boxc{
+  background-color: var(--secondaryColor);
+  font-family: victor!important;
+  font-size: 75%;
+  border-top: 1vh solid #000000;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  width: 80%;
+  margin: 2.5vh 0;
+  color: white;
+  padding-left: 2.5vh;
+}
+
+#l1,#l2,#l3,#l4{
+  padding: 5vh;
+  border: 0.25vh solid var(--secondaryColor);
+  border-radius: 2vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vh;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.questionBox{
+  width: 90%;
+  font-size: 130%;
+  font-family: victor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vh;
+}
+
+#answerValue{
+  border-radius: 1vh;
+  background-color: var(--secondaryColor);
+  padding: 1vh;
+  height: 4vh;
+  margin: 2.5vh 0;
+  min-width: 20vh;
+}
+#l1>div,#l2>div{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.questionBox input{
+  background-color: var(--secondaryColor);
+  border: transparent solid 0.1vh;
+  border-radius: 1vh;
+  padding: 1vh;
+  width: 20vh;
+  font-family: victor;
+  color: #93A42F
+}
+#mb{
+  padding: 2vh;
+  border-radius: 2vh;
+  font-size: 130%;
+  width: 80%;
+  margin-bottom: 10vh;
+}
+
+table{
+  border-radius: 2vh;
+}
+#answerValue{
+  color: #93A42F;
+}
+#label{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 360%;
+  color: #151818;
+  margin-top: 0vh;
+  background-color: #A800FF;
+}
+#label>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#name{
+  width: 50%;
+}
