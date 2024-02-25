@@ -61,4 +61,17 @@
   .docBox{  
     font-size: 80%;
   }
-}
+  .projectBox{
+    height: 40vh;
+    width: 25vh;
+    font-size: 75%;
+    margin-right: 0;
+  }
+  .projectImg{
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    }
