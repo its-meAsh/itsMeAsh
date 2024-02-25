@@ -469,3 +469,7 @@ footer {
 #me{
   filter: grayscale(100%) brightness(50%);
   }
+#r1s2{
+  width: 85%;
+  overflow: hidden;
+}
