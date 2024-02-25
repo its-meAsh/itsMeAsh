@@ -458,11 +458,11 @@ footer {
   }
 
   #row1:hover #r1s1 {
-    transform: translate(125%)
+    transform: translate(100%)
   }
 
   #row1:hover #r1s2 {
-    transform: translate(-75%)
+    transform: translate(-100%)
   }
 }
 
