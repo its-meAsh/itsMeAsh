@@ -1,0 +1,47 @@
+@font-face {
+  font-family: f1;
+  src: url(./fonts/font1.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --c1: #131316;
+  --c2: #30D2C5;
+  --c3: #000000;
+  --c4: #FFFFFF
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: f1;
+}
+.flex{
+  display: flex;
+}
+.colFlex{
+  flex-direction: column;
+}
+.rowFlex{
+  flex-direction: row;
+}
+.maxSize{
+  width: 100%;
+  height: 100%;
+}
+.paddingOG{
+  padding: 2.5vh;
+}
+.fCol2{
+  color: var(--c3);
+}
+.fCol2{
+  color: var(--c4);
+}
+.fCol3{
+  color: var(--c2);
+}
+.ashRef{
+  color: var(--c2);
+}

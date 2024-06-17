@@ -1,0 +1,153 @@
+main{
+  background-color: var(--c1);
+  height: 100%;
+  width: 100%;
+}
+#navName{
+  padding-left: 5.5vh;
+  font-size: 300%;
+}
+#nav{
+  width: 20%;
+}
+#navOpt{
+  height: 100%;
+  justify-content: center;
+  gap: 3vh;
+  font-size: 125%;
+  padding-left: 5.5vh;
+  width: 90%;
+}
+.navOption{
+  width: 60%;
+  padding: 1vh;
+  border-bottom: 0.5vh solid transparent;
+  transition: all 0.2s linear;
+}
+.navOption:hover{
+  border-bottom-color: var(--c2)
+}
+#screen{
+  overflow: hidden;
+}
+#nav{
+  border-right: var(--c2) solid 0.2vh;
+  box-shadow: 0 0 0.5vh var(--c2);
+}
+.subScreen{
+  justify-content: center;
+  align-items: center;
+}
+#homeText{
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1vh;
+  padding-left: 20vh;
+}
+
+#post{
+  font-size: 175%;
+}
+#greeting{
+  font-size: 300%;
+}
+#location{
+  font-size: 220%;
+}
+
+
+
+
+#jobs{
+  font-size: 300%;
+  text-align: center;
+  padding: 2vh;
+  padding-left: 50vh;
+  align-items: center;
+}
+#jobName{
+  transition: all 0.2s linear;
+  color: var(--c4);
+
+}
+
+#aboutPara{
+  font-size: 135%;
+  padding: 5vh 10vh;
+} 
+
+#skills{
+  gap: 3vh
+}
+
+#skills{
+  padding: 5vh 10vh;
+  font-size: 130%;
+}
+#skillsHeader{
+  font-size: 130%;
+}
+#skills ul{
+  padding: 2vh;
+}
+
+
+
+#projectHeader{
+  font-size: 200%;
+  padding: 4vh;
+}
+
+#projects{
+  padding: 4vh;
+  gap: 4vh;
+}
+.projectBox{
+  padding: 3vh;
+  width: 25vh;
+  font-size: 130%;
+  border: 0.2vh solid var(--c4);
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.projectBox:hover{
+  border-color: var(--c2);
+  transform: scale(1.1);
+}
+
+
+
+#Contact{
+  font-size: 140%;
+  justify-content: center;
+}
+#contactHeader{
+  padding: 2vh;
+  font-size: 150%;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactList{
+  padding: 4vh;
+  gap: 2vh;
+  align-items: center;
+}
+.contactBox{
+  padding: 3vh;
+  border: 0.2vh solid var(--c4);
+  text-align: center;
+  transition: all 0.2s linear;
+  width: 70%;
+}
+.contactBox:hover{
+  border-color: var(--c2);
+  transform: scale(0.9);
+}
+
+#Contact,#About,#Projects,#Home{
+  transform: translate(100%);
+  transition: all 0.2s linear;
+  position: relative;
+  top: 0;
+}
