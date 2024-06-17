@@ -1,0 +1,116 @@
+#backHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2vh;
+    color: var(--c4);
+    transition: all 0.2s linear;
+    width: 7.5vh;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backHome:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+
+#screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c1);
+    color: var(--c4);
+}
+
+.box {
+    background-color: var(--c1);
+    width: 15vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 400%;
+}
+
+#board {
+    display: grid;
+    gap: 1.5vh;
+    background-color: var(--c4);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#turnSpan{
+    font-size: 200%;
+}
+
+#winnerPanel,#drawPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--c1);
+    color: var(--c4);
+    gap: 5vh;
+    font-size: 135%;
+    display: none;
+}
+
+
+#playAgain,#playAgain2{
+    background-color: green;
+    padding: 2vh;
+    width: 15%;
+    text-align: center;
+    transition: all 0.2s linear;
+    border: 0.2vh solid green;
+}
+
+#playAgain:hover,#playAgain2:hover{
+    background-color: var(--c1);
+    cursor: pointer;
+}
+
+
+#screen,#backHome{
+  display: none;
+}
+#modeAsk{
+  background-color: var(--c1);
+  color: var(--c4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+#modeAsk>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6vh;
+}
+body{
+  align-items: center;
+}
+#modeAsk>div>div{
+  border: 0.2vh solid var(--c4);
+  padding: 2vh;
+  width: 30vh;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+#modeAsk>div>div:hover{
+  transform: scale(1.1)
+}
