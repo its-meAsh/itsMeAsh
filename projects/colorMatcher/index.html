@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Matcher</title>
+    <link rel="stylesheet" href="../../initial.css">
+    <link rel="stylesheet" href="
+    style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="backHome">Home</div>
+    <div id="timer">
+    </div>
+    <div id="screen">
+        <div id="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div id="colorView">
+            <div id="qColor">
+                #<span id="qHex">??????</span>
+            </div>
+            <div id="aColor">
+                #<div id="aHex"></div>
+            </div>
+        </div>
+
+        <div id="inputs">
+            <div class="ranger"><input type="range" min="0" max="255" value="127" id="rInput"><div class="hint" id="r">H</div></div>
+            <div class="ranger"><input type="range" min="0" max="255" value="127" id="gInput"><div class="hint" id="g">H</div></div>
+            <div class="ranger"><input type="range" min="0" max="255" value="127" id="bInput"><div class="hint" id="b">H</div></div>
+        </div>
+        
+        <div id="check">Check</div>
+
+        <div id="report">
+            <div>You were <span id="percentAcc">0</span>% accurate <span id="hintUsedComment"></span></div>
+            <div id="replay">Play again</div>
+        </div>
+    </div>
+</body>
+
+</html>
