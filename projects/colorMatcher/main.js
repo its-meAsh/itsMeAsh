@@ -153,6 +153,7 @@ function viewReport(percentage) {
 showQuestion()
 
 check.addEventListener('click', () => {
+  clearInterval(interval)
     let p = checkAnswer();
     viewReport(p)
 })
