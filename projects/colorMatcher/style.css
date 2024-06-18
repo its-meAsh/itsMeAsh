@@ -140,3 +140,12 @@ align-items: center;}
     background-color: var(--c2);
     color: var(--c1);
 }
+#r{
+  background-color: red;
+}
+#g{
+  background-color: green;
+}
+#b{
+  background-color: blue;
+}
