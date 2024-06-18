@@ -151,3 +151,7 @@ main{
   position: relative;
   top: 0;
 }
+
+#imageHome{
+	width: 50%;
+}
