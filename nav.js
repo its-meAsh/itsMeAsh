@@ -16,3 +16,10 @@ for (let each = 0; each<navDiv.length;each++){
   })
 }
 navDiv[0].click()
+
+const projects = document.querySelectorAll(".projectBox");
+for (let x = 0; x<projects.length;x++){
+  projects[x].addEventListener('click',(e)=>{
+    location.replace(`projects/${e.currentTarget.id}/index.html`)
+  })
+}
