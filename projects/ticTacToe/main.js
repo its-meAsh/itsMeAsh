@@ -21,6 +21,8 @@ var bLetter = "O";
 var uLetter = "X";
 var gameFinished = false;
 var botTurn = false;
+var winningComb;
+var moves = 0;
 
 ivi.addEventListener('click', () => {
   wBot = false;
@@ -33,7 +35,7 @@ ivbot.addEventListener('click', () => {
   screen.style.display = "flex";
   backHome.style.display = "flex"
   document.querySelector("#modeAsk").style.display = "none";
-
+  setLetter()
 })
 
 
@@ -41,11 +43,22 @@ function choice(array) {
   return array[Math.floor(Math.random() * (array.length))];
 }
 
-
+function setLetter() {
+  bLetter = choice(["X", "O"]);
+  if (bLetter == "X") {
+    uLetter = "O";
+    botTurn = true;
+    moveBot();
+  }
+  else {
+    uLetter = "X"
+  }
+}
 
 function move(e) {
   let letter;
   if (e.innerText == "") {
+    moves++;
     if (turn == 0) {
       letter = "X";
     }
@@ -94,6 +107,23 @@ function setGame() {
 
 function resetGame() {
   board = [["", "", ""], ["", "", ""], ["", "", ""]]
+  turn = 0;
+  wBot = true;
+  bLetter = "O";
+  uLetter = "X";
+  gameFinished = false;
+  botTurn = false;
+  winningComb;
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      grid[i][j].style.backgroundColor = "#131316"
+      grid[i][j].innerText = board[i][j]
+    }
+  }
+  winnerPanel.style.display = "none"
+  drawPanel.style.display = "none";
+  screen.style.display = "flex";
+  moves=0;
 }
 
 
@@ -108,12 +138,14 @@ function checkWin() {
 
   let c7 = [board[0][0], board[1][1], board[2][2]];
   let c8 = [board[2][0], board[1][1], board[0][2]];
-
+  let count = 0;
   let allCombs = [c1, c2, c3, c4, c5, c6, c7, c8];
   for (let comb of allCombs) {
     if (checkFreq(comb, "X", 3) || checkFreq(comb, "O", 3)) {
+      winnerComb = count;
       return 1;
     }
+    count++;
   }
   for (let comb2 of allCombs) {
     for (let each of comb2) {
@@ -127,34 +159,51 @@ function checkWin() {
 }
 
 function declareWinner() {
-  winnerPanel.style.display = "flex";
-  screen.style.display = "none"
-  let letter;
-  if (turn == 0) {
-    letter = "X";
+  let elems = []
+  for (let i = 0; i < 3; i++) {
+    elems.push(formatWithGrid([winnerComb, i]))
   }
-  else {
-    letter = "O"
+  for (let each of elems) {
+    grid[each[0]][each[1]].style.backgroundColor = "green";
   }
-  winnerLetter.innerText = letter;
+  setTimeout(() => {
+    winnerPanel.style.display = "flex";
+    screen.style.display = "none"
+    let letter;
+    if (turn == 0) {
+      letter = "X";
+    }
+    else {
+      letter = "O"
+    }
+    winnerLetter.innerText = letter;
+  }, 1500)
 }
 
 function declareDraw() {
-  drawPanel.style.display = "flex";
-  screen.style.display = "none";
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      grid[i][j].style.backgroundColor = "grey"
+    }
+  }
+  setTimeout(() => {
+    drawPanel.style.display = "flex";
+    screen.style.display = "none";
+  }, 1500)
 }
 
+
+
 playAgain.addEventListener('click', () => {
-  location.reload();
+  resetGame()
 })
 playAgain2.addEventListener('click', () => {
-  location.reload()
+  resetGame()
 })
 
 setGame()
 
 function moveBot() {
-  console.log("Bot playing...");
   let defenceMoves = [];
   let attackMoves = [];
   let allAvailableMoves = [];
@@ -206,9 +255,7 @@ function moveBot() {
     }
   }
 
-  console.table(defenceMoves);
-  console.table(attackMoves);
-  console.table(allAvailableMoves);
+  
 
   let move = [];
   if (attackMoves.length != 0) {
@@ -220,11 +267,13 @@ function moveBot() {
   else {
     move = choice(allAvailableMoves);
   }
+  if (moves <= 1){
+    move = [1,1]
+  }
   if (board[move[0]][move[1]] != "") {
     move = choice(allAvailableMoves)
   }
   grid[move[0]][move[1]].click()
-  console.log(move)
   botTurn = false;
 
 }
