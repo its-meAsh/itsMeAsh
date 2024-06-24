@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     padding: 2vh;
-    color: var(--c4);
+    color: white;
     transition: all 0.2s linear;
     width: 7.5vh;
     height: 7.5vh;
@@ -17,101 +17,70 @@
     cursor: pointer;
 }
 
-
-#screen {
-    width: 100vw;
+body {
+    background-color: #131316;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    gap: 5vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--c1);
-    color: var(--c4);
+    color: white;
 }
-
-.box {
-    background-color: var(--c1);
-    width: 15vh;
-    height: 15vh;
+#screen{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 400%;
-    transition: all 0.2s linear;
-}
-
-#board {
-    display: grid;
-    gap: 1.5vh;
-    background-color: var(--c4);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-#turnSpan{
-    font-size: 200%;
-}
-
-#winnerPanel,#drawPanel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--c1);
-    color: var(--c4);
+    justify-self: center;
+    align-items: center;
     gap: 5vh;
-    font-size: 135%;
-    display: none;
 }
 
-
-#playAgain,#playAgain2{
-    background-color: green;
-    padding: 2vh;
-    width: 15%;
+#options{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 3vh;
+}
+#options>div{
     text-align: center;
+    padding: 1.5vh;
+    width: 30vh;
+    font-size: 120%;
+    background-color: #30d2c5;
+    color: #151818;
     transition: all 0.2s linear;
-    border: 0.2vh solid green;
-}
-
-#playAgain:hover,#playAgain2:hover{
-    background-color: var(--c1);
     cursor: pointer;
 }
-
-
-#screen,#backHome{
-  display: none;
+#options>div:hover{
+    transform: scale(1.1);
 }
-#modeAsk{
-  background-color: var(--c1);
-  color: var(--c4);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2vh;
+#scoreBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-#modeAsk>div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6vh;
+#drawScore{
+    font-size: 150%;
+    padding: 2vh;
 }
-body{
-  align-items: center;
+#winScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
 }
-#modeAsk>div>div{
-  border: 0.2vh solid var(--c4);
-  padding: 2vh;
-  width: 30vh;
-  text-align: center;
-  transition: all 0.2s linear;
+#winScore>div{
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
 }
-#modeAsk>div>div:hover{
-  transform: scale(1.1)
+#moveView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#moveView>div{
+    padding: 3vh;
 }
