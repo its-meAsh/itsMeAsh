@@ -1,151 +1,176 @@
 #screen {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10vh;
-    background-color: var(--c1);
-    color: var(--c4);
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+  background-color: var(--c1);
+  color: var(--c4);
+  justify-content: center;
 }
 
 #colorView {
-    display: flex;
-    align-items: center;
-    gap: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 5vh;
 }
 
 #colorView>div {
-    border-radius: 1vh;
+  border-radius: 1vh;
 }
 
 #inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
 }
 
 #check {
-    background-color: var(--c2);
-    padding: 1vh;
-    width: 10%;
-    border: 0.25vh solid var(--c2);
-    text-align: center;
-    transition: all 0.2s linear;
-    color: var(--c1);
-    cursor: pointer;
+  background-color: var(--c2);
+  padding: 1vh;
+  width: 10%;
+  border: 0.25vh solid var(--c2);
+  text-align: center;
+  transition: all 0.2s linear;
+  color: var(--c1);
+  cursor: pointer;
 }
 
 #check:hover {
-    background-color: var(--c1);
-    color: var(--c4);
+  background-color: var(--c1);
+  color: var(--c4);
 }
 
 #colorView>div {
-    width: 20vh;
-    height: 20vh;
-    padding: 2vh;
-    border-radius: 0.25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 20vh;
+  height: 20vh;
+  padding: 2vh;
+  border-radius: 0.25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #report {
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5vh;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
 }
 
 #replay {
-    background-color: #008d00;
-    color: var(--c4);
-    border: 0.25vh solid #008d00;
-    padding: 1vh;
-    width: 20%;
-    text-align: center;
-    transition: all 0.2s linear;
-    cursor: pointer;
+  background-color: #008d00;
+  color: var(--c4);
+  border: 0.25vh solid #008d00;
+  padding: 1vh;
+  width: 20%;
+  text-align: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 
 #replay:hover {
-    color: var(--c4);
-    background-color: transparent;
+  color: var(--c4);
+  background-color: transparent;
 }
 
 #inputs {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
 }
 
 #inputs>div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #inputs input {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 1vh;
-    height: 0.5vh;
-    width: 25%;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1vh;
+  height: 0.5vh;
+  width: 25%;
+  cursor: pointer;
 }
 
 #report {
-    display: none;
+  display: none;
 }
 
 #backHome {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 2vh;
-    color: var(--c4);
-    transition: all 0.2s linear;
-    width: 7.5vh;
-    height: 7.5vh;
-    display: flex;
-    justify-content: center;
-align-items: center;}
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2vh;
+  color: var(--c4);
+  transition: all 0.2s linear;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#extension{
+  position: absolute;
+  top: 0;
+  right: 2%;
+  padding: 2vh;
+  color: var(--c4);
+  transition: all 0.2s linear;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
 
 #backHome:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-}
-.ranger{
-    display: flex;
-    gap: 2vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
-.hint{
-    padding: 1vh;
-    transition: all 0.2s linear;
-    width: 2vh;
-    height: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ranger {
+  display: flex;
+  gap: 2vh;
 }
-.hint:hover{
-    background-color: var(--c2);
-    color: var(--c1);
+
+.hint {
+  padding: 1vh;
+  transition: all 0.2s linear;
+  width: 2vh;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#r{
+
+.hint:hover {
+  background-color: var(--c2);
+  color: var(--c1);
+}
+
+#r {
   background-color: red;
 }
-#g{
+
+#g {
   background-color: green;
 }
-#b{
+
+#b {
   background-color: blue;
+}
+#a{
+  background-image: linear-gradient(90deg,black,white)
 }
