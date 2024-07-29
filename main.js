@@ -34,4 +34,4 @@ redirect.addEventListener('mouseover', () => {
     setTimeout(() => { redirAnim = !redirAnim; redirect.style.animation = "" }, 1000)
   }
 })
-redirect.addEventListener('click', () => { location.replace("its-meash.github.io/itsMeAsh2/") })
+redirect.addEventListener('click', () => { location.replace("its-meash.github.io/itsMeAshAgain/") })
