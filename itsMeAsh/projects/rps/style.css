@@ -1,0 +1,75 @@
+
+
+body {
+    background-color: #131316;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#screen{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+#options{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 3vh;
+}
+#options>div{
+    text-align: center;
+    padding: 1.5vh;
+    width: 30vh;
+    font-size: 120%;
+    background-color: #30d2c5;
+    color: #151818;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+#options>div:hover{
+    transform: scale(1.1);
+}
+#scoreBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#drawScore{
+    font-size: 150%;
+    padding: 2vh;
+}
+#winScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
+}
+#winScore>div{
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+#moveView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#moveView>div{
+    padding: 3vh;
+}
+
+@media (orientation: portrait) {
+    #options {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../../initial.css">
+    <script src="../../common.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex colFlex">
+    <div id="backHome">Home</div>
+    <div id="modeAsk" class="maxSize">
+      <img src="../../resource/uLonely.gif" alt="You Look Lonely">
+      <div><div id="IvI">UNREAL</div><div id="IvBot">REAL</div></div>
+    </div>
+    <div id="screen">
+        <div><span id="turnSpan">X</span>'s turn</div>
+        <div id="board">
+            <div class="box" id="b00"></div>
+            <div class="box" id="b01"></div>
+            <div class="box" id="b02"></div>
+            <div class="box" id="b10"></div>
+            <div class="box" id="b11"></div>
+            <div class="box" id="b12"></div>
+            <div class="box" id="b20"></div>
+            <div class="box" id="b21"></div>
+            <div class="box" id="b22"></div>
+        </div>
+    </div>
+
+    <div id="winnerPanel">
+        <div>Player <span id="winnerLetter"></span> is the winner</div>
+        <div id="playAgain">Play Again</div>
+    </div>
+
+    <div id="drawPanel">
+        <div>It's a draw</div>
+        <div id="playAgain2">Play Again</div>
+    </div>
+</body>
+
+</html>

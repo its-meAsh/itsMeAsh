@@ -1,0 +1,83 @@
+body {
+  margin-top: 5vh;
+  height: 95vh!important;
+}
+#backHome{
+  right: 0;
+}
+
+body {
+  background-color: #131316;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#screen{
+  margin: 5vh 10vh;
+  color: var(--c1);
+}
+.orgMainEl{
+  padding: 1.5vh;
+  display: flex;
+  flex-direction: row;
+  border: 0.25vh solid var(--c1);
+  gap: 1.5vh;
+}
+.childElem{
+  padding: 1vh;
+  gap: 1.5vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.orgInputMainEl{
+  border: 0.25vh solid var(--c1);
+  padding: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+.orgInputEl{
+  background-color: var(--c1);
+  color: var(--c4);
+  font-family: f1;
+  padding: 1vh;
+  border: none;
+}
+
+#output{
+  display: flex;
+  gap: 1.5vh;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: var(--c1);
+  border: 0.25vh solid var(--c1);
+  padding: 2vh;
+}
+#playAgain{
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background-color: green;
+  color: white;
+  padding: 2vh 5vh;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#playAgain:hover{
+  transform: scale(1.1);
+}
+
+@media (orientation: portrait) {
+  body>div {
+    display: none !important;
+  }
+
+  #noResponsiveScreen,
+  #backHome {
+    display: flex !important;
+  }
+}

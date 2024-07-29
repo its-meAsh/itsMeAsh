@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="../../initial.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../common.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="backHome">Home</div>
+    <div id="screen">
+        <div>A number from <span id="lowerLimit">0</span> to <span id="upperLimit">0</span> has been chosen, Guess it.
+        </div>
+        <div><input type="number" id="numberInput"></div>
+        <div id="checkButton">Check<span id="attempts">Attempt(0)</span></div>
+
+        <div>Hint: <span id="hintSpan">None</span></div>
+    </div>
+    <div id="winPanel">
+        <div>You gussed the number right in <span id="finalAttempts">0</span> Attempts! The probability was <span id="guessingProbability">0</span>%</div>
+        <div id="playAgain">Play Again</div>
+    </div>
+</body>
+
+</html>
