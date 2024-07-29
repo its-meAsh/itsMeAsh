@@ -1,0 +1,124 @@
+#backHome {
+  position: absolute;
+  top: 0;
+  right: 0!important;
+  left: 94vw;
+  padding: 2vh;
+  color: white;
+  transition: all 0.2s linear;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#backHome:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+
+body{
+  background-color: var(--c1);
+  color: var(--c4);
+}
+.docHeading{
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+.path{
+  font-family: monospace;
+}
+.docName{
+  font-size: 400%;
+}
+
+.screen{
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+.writingArea{
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10vh;
+  overflow: scroll;
+  max-height: 75vh;
+}
+.writingArea::-webkit-scrollbar{
+  display: none;
+}
+
+.projectRow{
+  display: flex;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.projectBox{
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 140%;
+  border: 0.25vh solid var(--c4);
+  padding: 2vh;
+  transition: all 0.2s linear;
+}
+.projectBox:hover{
+  border-color: var(--c2);
+  transform: scale(0.9);
+  color: var(--c2);
+}
+.projectDesc{
+  font-size: 120%;
+}
+
+.progress{
+  height: 72.5vh;
+  padding: 2vh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+#progressBar{
+  background-image: linear-gradient(violet,indigo,deepskyblue,green,yellow,orange,red);
+  height: 0%;
+  width: 5%;
+  border-radius: 2vh;
+}
+@media (orientation: portrait) {
+  .projectRow {
+    flex-direction: column;
+  }
+
+  .progress {
+    display: none;
+  }
+
+  #backHome {
+    left: 75vw;
+  }
+
+  .writingArea {
+    width: 100%;
+  }
+
+  .projectBox {
+    width: 90%;
+  }
+}
+
+@media (orientation: portrait) {
+    body>div{
+        display: none!important;
+    }
+    #noResponsiveScreen,#backHome{
+        display: flex!important;
+    }
+}

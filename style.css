@@ -1,0 +1,385 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--c1);
+  height: 100%;
+  width: 100%;
+}
+
+#navName {
+  padding-left: 5.5vh;
+  font-size: 300%;
+}
+
+#nav {
+  width: 20%;
+}
+
+#navOpt {
+  height: 100%;
+  justify-content: center;
+  gap: 3vh;
+  font-size: 125%;
+  padding-left: 5.5vh;
+  width: 90%;
+}
+
+.navOption {
+  width: 60%;
+  padding: 1vh;
+  border-bottom: 0.5vh solid transparent;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.navOption:hover {
+  border-bottom-color: var(--c2) !important;
+}
+
+#screen {
+  overflow: hidden;
+}
+
+#nav {
+  border-right: var(--c2) solid 0.2vh;
+  box-shadow: 0 0 0.5vh var(--c2);
+}
+
+.subScreen {
+  justify-content: center;
+  align-items: center;
+}
+
+#homeText {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1vh;
+  padding-left: 20vh;
+}
+
+#post {
+  font-size: 175%;
+}
+
+#greeting {
+  font-size: 300%;
+}
+
+#location {
+  font-size: 220%;
+}
+
+
+
+
+#jobs {
+  font-size: 300%;
+  text-align: center;
+  padding: 2vh;
+  padding-left: 50vh;
+  align-items: center;
+}
+
+#jobName {
+  transition: all 0.2s linear;
+  color: var(--c4);
+
+}
+
+#aboutPara {
+  font-size: 135%;
+  padding: 5vh 10vh;
+}
+
+#skills {
+  gap: 3vh
+}
+
+#skills {
+  padding: 5vh 10vh;
+  font-size: 130%;
+}
+
+#skillsHeader {
+  font-size: 130%;
+}
+
+#skills ul {
+  padding: 2vh;
+}
+
+
+
+#projectHeader {
+  font-size: 200%;
+  padding: 4vh;
+}
+
+#projects {
+  padding: 4vh;
+  gap: 4vh;
+}
+
+.projectBox {
+  padding: 3vh;
+  width: 25vh;
+  font-size: 130%;
+  border: 0.2vh solid var(--c4);
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.projectBox:hover {
+  border-color: var(--c2);
+  transform: scale(1.1);
+}
+
+
+
+#Contact {
+  font-size: 140%;
+  justify-content: center;
+}
+
+#contactHeader {
+  padding: 2vh;
+  font-size: 150%;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactList {
+  padding: 4vh;
+  gap: 2vh;
+  align-items: center;
+}
+
+.contactBox {
+  padding: 3vh;
+  border: 0.2vh solid var(--c4);
+  text-align: center;
+  transition: all 0.2s linear;
+  width: 70%;
+}
+
+.contactBox:hover {
+  border-color: var(--c2);
+  transform: scale(0.9);
+}
+
+#Contact,
+#About,
+#Projects,
+#Home {
+  transform: translate(100%);
+  transition: all 0.2s linear;
+  position: relative;
+  top: 0;
+}
+
+#imageHome {
+  width: 50%;
+}
+
+#imageHome>img {
+  transition: all 0.2s linear;
+  animation: spin 20s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+#guider {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height: 6vh;
+  text-align: center;
+  background-color: var(--c2);
+  color: var(--c1);
+  transition: all 0.2s linear;
+  bottom: 2.5%;
+  right: 2.5%;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+#guider:hover {
+  box-shadow: 0px 0px 1vh black;
+  transform: scale(1.1);
+}
+
+#guiderScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 25%;
+  position: absolute;
+  bottom: 2.5%;
+  right: 2.5%;
+  z-index: 200;
+  border: 0.25vh solid var(--c4);
+  background-color: white;
+  height: 70%;
+  border-radius: 0.25vh;
+  transition: all 0.2s linear;
+}
+
+#chats {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+#chats::-webkit-scrollbar {
+  display: none;
+}
+
+#guiderName {
+  padding: 1vh 2vh;
+  background-color: #131316;
+  color: var(--c4);
+  font-size: 130%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.25vh;
+  align-items: center;
+}
+
+#closeGuider {
+  font-size: 75%;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  border: 0.2vh solid var(--c1);
+  cursor: pointer;
+}
+
+#closeGuider:hover {
+  border-color: var(--c4);
+  transform: scale(1.1)
+}
+
+#guiderScreen {
+  transform: translate(0, 120%);
+}
+
+.messageBox {
+  padding: 1vh;
+  margin: 1vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  max-width: 70%;
+  border-radius: 0.25vh;
+}
+
+.optBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25vh;
+  width: fit-content;
+  max-width: 70%;
+  margin: 1vh;
+  margin-bottom: 2vh;
+}
+
+.option {
+  color: var(--c1);
+  text-align: center;
+  padding: 0.5vh 2vh;
+  width: 97%;
+  border-radius: 0.25vh;
+  border: 0.25vh solid green;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: green;
+  color: var(--c4);
+}
+#Docs{
+  transition: all 0.2s linear;
+}
+
+#docsHeader {
+  padding: 4vh;
+  font-size: 200%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.docBox{
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  border: 0.25vh solid var(--c4);
+  margin: 2vh;
+  transition: all 0.2s linear;
+  gap: 1vh;
+}
+.docHeader{
+  font-size: 120%;
+}
+.docBox:hover{
+  transform: scale(0.95)
+}
+
+#redirect {
+  transition: all 0.2s linear;
+  cursor: pointer;
+  animation: none;
+  border: 0.5vh solid transparent;
+}
+
+@keyframes createBorders {
+  0% {
+    border-color: transparent;
+  }
+
+  16% {
+    border-bottom-color: var(--c2);
+  }
+
+  32% {
+    border-right-color: var(--c2);
+  }
+
+  48% {
+    border-top-color: var(--c2);
+  }
+
+  64% {
+    border-left-color: var(--c2);
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+@media (orientation: portrait) {
+  body>div,main{
+    display: none !important;
+  }
+
+  #noResponsiveScreen,
+  #backHome {
+    display: flex !important;
+  }
+}

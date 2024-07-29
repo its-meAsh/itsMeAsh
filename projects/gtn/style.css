@@ -1,0 +1,103 @@
+
+body {
+    background-color: #131316;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: f1;
+}
+
+#screen {
+    width: 40%;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+#screen>div {
+    width: 100%;
+}
+
+#numberInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2vh solid white;
+    width: 30%;
+    color: white;
+    padding: 1vh;
+    font-size: 110%;
+    font-family: f1;
+}
+
+#numberInput:focus {
+    border-bottom-color: #30d2c5;
+}
+
+#checkButton {
+    width: 30% !important;
+    padding: 1vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    cursor: pointer;
+}
+
+#checkButton:hover {
+    transform: scale(1.1);
+}
+
+#winPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+#playAgain {
+    width: 30% !important;
+    padding: 1vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    transform: scale(1.1);
+
+}
+
+#winPanel {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    #screen {
+        width: 75%;
+    }
+
+    #winPanel {
+        padding: 3vh;
+        text-align: center;
+    }
+}
