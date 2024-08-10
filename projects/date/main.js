@@ -2,7 +2,7 @@ const backHome = document.querySelector("#backHome")
 backHome.addEventListener('click', () => { location.replace("../../index.html") });
 
 
-const dayNow = document.querySelector("#dateNow");
+const dayNow = document.querySelector("#dayNow");
 const dateNow = document.querySelector("#dateNow");
 const monthNow = document.querySelector("#monthNow");
 const yearNow = document.querySelector("#yearNow");
